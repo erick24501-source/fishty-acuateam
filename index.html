@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fishty, proyecto educativo de Acuateam para rescatar y conservar la vida marina.">
+  <title>Fishty | Guardianes del océano</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar">
+      <a class="logo" href="#inicio">🐠 Fishty</a>
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#especies">Especies</a>
+        <a href="#proyecto">Proyecto</a>
+      </div>
+    </nav>
+
+    <section id="inicio" class="hero-content">
+      <span class="tag">PROYECTO ACUATEAM</span>
+      <h1>Guardianes del océano</h1>
+      <p>Descubre las especies marinas y aprende a proteger su hogar.</p>
+      <a class="button" href="#especies">Explorar especies</a>
+    </section>
+  </header>
+
+  <main>
+    <section id="especies" class="section">
+      <span class="tag">EXPLORA Y APRENDE</span>
+      <h2>Especies marinas</h2>
+      <p>Consulta las fichas guardadas o busca una especie en la API científica WoRMS.</p>
+
+      <form id="searchForm" class="search">
+        <input id="searchInput" type="search"
+          placeholder="Ej. Amphiprion ocellaris"
+          aria-label="Nombre de especie" required>
+        <button class="button" type="submit">Buscar</button>
+      </form>
+
+      <p id="message" role="status" aria-live="polite">Cargando especies...</p>
+      <div id="fishGrid" class="fish-grid"></div>
+
+      <h3>Resultados de la búsqueda</h3>
+      <div id="apiResults" class="fish-grid"></div>
+    </section>
+
+    <section id="proyecto" class="section project">
+      <span class="tag">NUESTRO PROPÓSITO</span>
+      <h2>¿Qué es Fishty?</h2>
+      <p>
+        Fishty es una propuesta de videojuego educativo en Roblox enfocada
+        en el rescate y la conservación de la vida marina. Busca que los
+        jugadores conozcan las especies, comprendan sus características
+        y aprendan la importancia de proteger los ecosistemas acuáticos.
+      </p>
+
+      <h3>Objetivo</h3>
+      <p>
+        Fomentar la conciencia ambiental mediante una experiencia
+        interactiva, divertida y educativa.
+      </p>
+
+      <h3>Equipo Acuateam</h3>
+      <ul>
+        <li>Bryan Yael Bejar Flores — Scrum Master</li>
+        <li>Erick Manuel Mendez Vanegas</li>
+        <li>Yamil Alexander Garcia Trejo</li>
+        <li>Leonardo Emanuel Garcia Camacho</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Fishty · Acuateam · Proyecto escolar de conservación marina</p>
+    <a href="https://www.marinespecies.org/" target="_blank" rel="noopener">
+      Fuente científica: WoRMS
+    </a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
