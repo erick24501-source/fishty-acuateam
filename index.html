@@ -1,85 +1,382 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Fishty, proyecto educativo de Acuateam para rescatar y conservar la vida marina.">
-  <title>Fishty | Guardianes del océano</title>
+  <meta name="description" content="Acuateam Games: Fishty, Mundos Salvajes y Escape and Rescue.">
+  <title>Acuateam Games | Fishty y Mundos Salvajes</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="hero">
-    <nav class="navbar">
-      <a class="logo" href="#inicio">🐠 Fishty</a>
-      <div class="nav-links">
-        <a href="#inicio">Inicio</a>
-        <a href="#especies">Especies</a>
-        <a href="#proyecto">Proyecto</a>
-      </div>
-    </nav>
 
-    <section id="inicio" class="hero-content">
-      <span class="tag">PROYECTO ACUATEAM</span>
-      <h1>Guardianes del océano</h1>
-      <p>Descubre las especies marinas y aprende a proteger su hogar.</p>
-      <a class="button" href="#especies">Explorar especies</a>
-    </section>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#inicio">ACUATEAM<span> GAMES</span></a>
+
+    <nav aria-label="Navegación principal">
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#juegos">Videojuegos</a></li>
+        <li><a href="#fishty">Fishty</a></li>
+        <li><a href="#mundos">Mundos Salvajes</a></li>
+        <li><a href="#mapa-escape-rescue">Mapa</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section id="especies" class="section">
-      <span class="tag">EXPLORA Y APRENDE</span>
-      <h2>Especies marinas</h2>
-      <p>Consulta las fichas guardadas o busca una especie en la API científica WoRMS.</p>
 
-      <form id="searchForm" class="search">
-        <input id="searchInput" type="search"
-          placeholder="Ej. Amphiprion ocellaris"
-          aria-label="Nombre de especie" required>
-        <button class="button" type="submit">Buscar</button>
-      </form>
+    <!-- INICIO -->
 
-      <p id="message" role="status" aria-live="polite">Cargando especies...</p>
-      <div id="fishGrid" class="fish-grid"></div>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">CREATIVIDAD · AVENTURA · CONSERVACIÓN</span>
 
-      <h3>Resultados de la búsqueda</h3>
-      <div id="apiResults" class="fish-grid"></div>
+        <h1>Bienvenido a <span>Acuateam Games</span></h1>
+
+        <p>
+          Descubre videojuegos, explora mundos increíbles
+          y aprende mientras juegas.
+        </p>
+
+        <a class="btn" href="#juegos">Explorar videojuegos</a>
+      </div>
+
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
     </section>
 
-    <section id="proyecto" class="section project">
-      <span class="tag">NUESTRO PROPÓSITO</span>
-      <h2>¿Qué es Fishty?</h2>
-      <p>
-        Fishty es una propuesta de videojuego educativo en Roblox enfocada
-        en el rescate y la conservación de la vida marina. Busca que los
-        jugadores conozcan las especies, comprendan sus características
-        y aprendan la importancia de proteger los ecosistemas acuáticos.
-      </p>
+    <!-- VIDEOJUEGOS -->
 
-      <h3>Objetivo</h3>
-      <p>
-        Fomentar la conciencia ambiental mediante una experiencia
-        interactiva, divertida y educativa.
-      </p>
+    <section class="section" id="juegos">
+      <div class="section-heading">
+        <span class="eyebrow">NUESTROS PROYECTOS</span>
+        <h2 class="section-title">Videojuegos</h2>
+        <p class="section-description">
+          Conoce las experiencias que forman parte de Acuateam Games.
+        </p>
+      </div>
 
-      <h3>Equipo Acuateam</h3>
-      <ul>
-        <li>Bryan Yael Bejar Flores — Scrum Master</li>
-        <li>Erick Manuel Mendez Vanegas</li>
-        <li>Yamil Alexander Garcia Trejo</li>
-        <li>Leonardo Emanuel Garcia Camacho</li>
-      </ul>
+      <div class="game-grid">
+
+        <article class="game-card game-fishty">
+          <div class="game-icon">🐠</div>
+          <span class="card-tag">CONSERVACIÓN MARINA</span>
+          <h3>Fishty</h3>
+          <p>
+            Una aventura para conocer la vida marina,
+            descubrir especies y aprender sobre su conservación.
+          </p>
+          <a class="btn btn-small" href="#fishty">Conocer Fishty</a>
+        </article>
+
+        <article class="game-card game-wild">
+          <div class="game-icon">🌎</div>
+          <span class="card-tag">EXPLORACIÓN</span>
+          <h3>Mundos Salvajes</h3>
+          <p>
+            Explora diferentes biomas y descubre las criaturas
+            que habitan en cada mundo.
+          </p>
+          <a class="btn btn-small" href="#mundos">Explorar mundos</a>
+        </article>
+
+        <article class="game-card game-rescue">
+          <div class="game-icon">🗺️</div>
+          <span class="card-tag">AVENTURA Y DESAFÍOS</span>
+          <h3>Escape and Rescue</h3>
+          <p>
+            Conoce las zonas y escenarios que aparecen
+            en el video del juego.
+          </p>
+          <a class="btn btn-small" href="#mapa-escape-rescue">Ver mapa</a>
+        </article>
+
+      </div>
     </section>
+
+    <!-- FISHTY -->
+
+    <section class="section section-dark" id="fishty">
+      <div class="section-heading">
+        <span class="eyebrow">VIDA MARINA</span>
+        <h2 class="section-title">🐠 Fishty</h2>
+        <p class="section-description">
+          Busca especies marinas y consulta sus datos disponibles.
+        </p>
+      </div>
+
+      <div class="content-wrap">
+
+        <form class="search-form" id="fish-form">
+          <input
+            id="fish-search"
+            type="search"
+            placeholder="Escribe el nombre de una especie marina..."
+            autocomplete="off"
+          >
+
+          <button class="btn" type="submit">
+            Buscar especie
+          </button>
+
+          <button class="btn btn-ghost" id="fish-reset" type="button">
+            Mostrar iniciales
+          </button>
+        </form>
+
+        <p class="message" id="fish-message" aria-live="polite">
+          Explora las fichas iniciales o busca una especie.
+        </p>
+
+        <div class="fish-grid" id="fish-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- MUNDOS SALVAJES -->
+
+    <section class="section" id="mundos">
+      <div class="section-heading">
+        <span class="eyebrow">13 BIOMAS · MÁS DE 100 CRIATURAS</span>
+        <h2 class="section-title">🌎 Mundos Salvajes</h2>
+        <p class="section-description">
+          Selecciona un mundo o escribe el nombre de una criatura
+          para encontrar su ficha.
+        </p>
+      </div>
+
+      <div class="content-wrap">
+
+        <div class="filters">
+
+          <select id="biome-select" aria-label="Filtrar por mundo">
+            <option value="all">Todos los mundos</option>
+          </select>
+
+          <input
+            id="creature-search"
+            type="search"
+            placeholder="Buscar criatura..."
+            autocomplete="off"
+          >
+
+        </div>
+
+        <p class="message" id="biome-message" aria-live="polite">
+          Selecciona un mundo para ver sus criaturas.
+        </p>
+
+        <div class="biome-grid" id="biome-grid"></div>
+
+        <div class="creature-grid" id="creature-grid"></div>
+
+      </div>
+    </section>
+
+    <!-- ESCAPE AND RESCUE -->
+
+    <section class="section map-section" id="mapa-escape-rescue">
+
+      <div class="section-heading">
+        <span class="eyebrow">EXPLORA EL JUEGO</span>
+
+        <h2 class="section-title">
+          🗺️ Mapa de <span>Escape and Rescue</span>
+        </h2>
+
+        <p class="section-description">
+          Selecciona una zona para consultar la temática
+          y los elementos que se distinguen en el video.
+        </p>
+      </div>
+
+      <div class="map-layout">
+
+        <!-- MAPA -->
+
+        <div class="map-board" aria-label="Mapa interactivo de zonas">
+
+          <div class="map-route" aria-hidden="true"></div>
+
+          <button
+            class="map-node forest"
+            data-zone="forest"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="node-icon">🌳</span>
+            <strong>Forest Egg</strong>
+            <small>Bosque y huevos</small>
+          </button>
+
+          <button
+            class="map-node radioactive"
+            data-zone="radioactive"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="node-icon">☢️</span>
+            <strong>Radioactive Zone</strong>
+            <small>Zona radiactiva</small>
+          </button>
+
+          <button
+            class="map-node christmas"
+            data-zone="christmas"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="node-icon">❄️</span>
+            <strong>Christmas Zone</strong>
+            <small>Zona nevada</small>
+          </button>
+
+          <button
+            class="map-node halloween"
+            data-zone="halloween"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="node-icon">🎃</span>
+            <strong>Halloween Zone</strong>
+            <small>Zona de Halloween</small>
+          </button>
+
+          <button
+            class="map-node aquatic"
+            data-zone="aquatic"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="node-icon">🌊</span>
+            <strong>Aquatic Zone</strong>
+            <small>Zona acuática</small>
+          </button>
+
+          <button
+            class="map-node darkforest"
+            data-zone="darkforest"
+            type="button"
+            aria-pressed="false"
+          >
+            <span class="node-icon">🌙</span>
+            <strong>Bosque oscuro</strong>
+            <small>Escenario nocturno</small>
+          </button>
+
+          <div class="map-caption">
+            MAPA ILUSTRATIVO · ZONAS OBSERVADAS EN EL VIDEO
+          </div>
+
+        </div>
+
+        <!-- INFORMACIÓN DE LA ZONA -->
+
+        <aside class="zone-panel" aria-live="polite">
+
+          <div class="panel-top">
+            <span>ZONA SELECCIONADA</span>
+            <i></i>
+          </div>
+
+          <div class="selected-icon" id="zone-icon">
+            🗺️
+          </div>
+
+          <h3 id="zone-title">
+            Selecciona una zona
+          </h3>
+
+          <p id="zone-description">
+            Pulsa cualquiera de los puntos del mapa
+            para ver la información disponible.
+          </p>
+
+          <div class="zone-detail">
+            <strong>LO QUE MUESTRA EL VIDEO</strong>
+
+            <p id="zone-detail">
+              La distribución del mapa es ilustrativa
+              y no representa distancias exactas del juego.
+            </p>
+          </div>
+
+        </aside>
+
+      </div>
+
+      <div class="map-notes">
+        <span>🏃 Desafíos de velocidad</span>
+        <span>🧭 Exploración de biomas</span>
+        <span>🏆 Recompensas y competencia</span>
+        <span>🛟 Rescate y escape</span>
+      </div>
+
+      <p class="map-disclaimer">
+        Nota: el mapa representa las zonas identificadas visualmente
+        en el video; no es un plano oficial del mapa interno de Roblox.
+      </p>
+
+    </section>
+
+    <!-- EQUIPO -->
+
+    <section class="section section-dark" id="equipo">
+
+      <div class="section-heading">
+        <span class="eyebrow">QUIÉNES SOMOS</span>
+        <h2 class="section-title">Nuestro equipo</h2>
+        <p class="section-description">
+          Acuateam Games está formado por estudiantes
+          que desarrollan experiencias de videojuegos.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <article class="team-card">
+          <div class="team-avatar">🧑‍💻</div>
+          <h3>Bryan Yael Bejar Flores</h3>
+          <p>Scrum Master</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar">🎮</div>
+          <h3>Erick Manuel Mendez Vanegas</h3>
+          <p>Equipo de desarrollo</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar">💻</div>
+          <h3>Yamil Alexander Garcia Trejo</h3>
+          <p>Equipo de desarrollo</p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar">🕹️</div>
+          <h3>Leonardo Emanuel Garcia Camacho</h3>
+          <p>Equipo de desarrollo</p>
+        </article>
+
+      </div>
+    </section>
+
   </main>
 
+  <!-- PIE DE PÁGINA -->
+
   <footer>
-    <p>Fishty · Acuateam · Proyecto escolar de conservación marina</p>
-    <a href="https://www.marinespecies.org/" target="_blank" rel="noopener">
-      Fuente científica: WoRMS
-    </a>
+    <p>
+      <strong>ACUATEAM GAMES</strong>
+      · Videojuegos, creatividad y aprendizaje.
+    </p>
   </footer>
 
+  <!-- JAVASCRIPT -->
+
   <script src="app.js"></script>
+
 </body>
 </html>
