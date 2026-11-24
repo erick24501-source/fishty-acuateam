@@ -3,7 +3,7 @@
    FISHTY + MUNDOS SALVAJES + ESCAPE AND RESCUE
 ========================================================= */
 
-const API_URL = ""; https://fishty-acuateam.firsthy-y-mundos-salvajes.workers.dev/
+const API_URL = ""; // Pega aquí la URL de tu Cloudflare Worker si lo utilizas.
 
 const initialFishes = [
   ["Pez Payaso","Amphiprion ocellaris","Arrecife","Pez colorido que vive en simbiosis con las anémonas marinas.","🐠"],
